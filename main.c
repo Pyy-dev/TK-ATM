@@ -1,5 +1,7 @@
 #include<stdio.h>
 #include<Windows.h>
+#include<time.h>
+#include "tools/getTime.h"
 #include "model/UserModel.h"
 #include "view/main.h"
 void OldUserLogin();//¿œ”√ªßµ«¬º 

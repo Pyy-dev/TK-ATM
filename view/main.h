@@ -1,8 +1,16 @@
+/*
+	Name: ViewMain 
+	Copyright: 台州科技学院
+	Author: 吴联爽
+	Date: 11/12/19 19:10
+	Description: 界面 
+*/
 void cls(){
 	system("cls");
 } 
 void Header(){
 cls();
+printfNowTime();
 printf("      ※※※※※※ 欢 迎 使 用※※※※※※※※      \n");
 printf("      ※※※※※校 园 银 行 系 统 ※※※※※※      \n");	
 }
