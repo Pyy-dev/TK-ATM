@@ -57,6 +57,11 @@ void NewUserRegister(){
 	char username[50],password[50],password_r[50];
 	struct User user;
 	RegUserView(username,password,password_r);
+	if(!(strlen(password) >= 6 && strlen(password) <= 12)){
+		InfoTips("密码必须大于等于6 小于等于12");
+		Menu_Select();
+		return;
+	}
 	if(strcmp(password,password_r) != 0){
 		InfoTips("        两次密码不一致      ");
 		Menu_Select();
@@ -134,6 +139,11 @@ void ChangePassword(char * username){
 	char oldPass[50],newPass[50],newPass_r[50];
 	ChangePasswordView(oldPass,newPass,newPass_r);
 	struct User  * user;
+	if(!(strlen(newPass) >= 6 && strlen(newPass) <= 12)){
+		InfoTips("密码必须大于等于6 小于等于12");
+		OldUserMenu(username);
+		return;
+	}
 	if(strcmp(newPass,newPass_r) != 0){
 		InfoTips("        两次密码不一致      ");
 		OldUserMenu(username);
