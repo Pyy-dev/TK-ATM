@@ -11,7 +11,7 @@ void cls(){
 void Header(){
 cls();
 printfNowTime();
-printf("      ※※※※※※ 欢 迎 使 用※※※※※※※※      \n");
+printf("      ※※※※※※ 欢 迎 使 用 PY银行※※※※※※※※      \n");
 printf("      ※※※※※校 园 银 行 系 统 ※※※※※※      \n");	
 }
 void MenuView_UnLogin(){
